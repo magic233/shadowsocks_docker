@@ -49,18 +49,15 @@ case $num1 in
 		start_id=$(head -c 12 /etc/shadowsocks-libev/port_tmp)
 		docker start $start_id
 		echo "Start shadowsocks->$start_id successfully..."
-		menu
 		;;
 		3)
 		docker ps |grep shadowsocks-libev >/etc/shadowsocks-libev/tmp
 		stop_id=$(head -c 12 /etc/shadowsocks-libev/tmp)
 		docker stop $stop_id
 		echo "Stop shadowsocks->$stop_id successfully..."
-		menu
 		;;
 		4)
 		echo cat /etc/shadowsocks-libev/config_tmp
-		menu
 		;;
 		5)
 		docker ps |grep shadowsocks-libev >/etc/shadowsocks-libev/tmp
@@ -77,7 +74,6 @@ case $num1 in
 		echo "================================="
 		echo "=Remove shadowsocks successfully="
 		echo "================================="
-		menu
 		;;
 		6)
 	exit 0
