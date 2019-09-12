@@ -70,6 +70,12 @@ case $num1 in
 		echo "Remove shadowsocks->$stop_id successfully..."
 		docker docker rmi teddysun/shadowsocks-libev
 		echo "Remove shadowsocks image successfully..."
+		rm -rf /etc/shadowsocks
+		echo "Remove shadowsocks config successfully..."
+		clear 
+		echo "================================="
+		echo "=Remove shadowsocks successfully="
+		echo "================================="
 		menu
 		;;
 		6)
