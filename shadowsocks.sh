@@ -56,11 +56,12 @@ case $num1 in
 		stop_id=$(head -c 12 /etc/shadowsocks-libev/tmp)
 		docker stop $stop_id
 		echo "Stop shadowsocks->$stop_id successfully..."
-		;;
 		menu
+		;;
 		4)
 		echo cat /etc/shadowsocks-libev/config_tmp
 		menu
+		;;
 		5)
 		docker ps |grep shadowsocks-libev >/etc/shadowsocks-libev/tmp
 		stop_id=$(head -c 12 /etc/shadowsocks-libev/tmp)
