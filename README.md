@@ -3,11 +3,10 @@
 
 本脚本是在这个image的基础上编写，为了便利使用，仅供自用。
 
-纯镜像下载：docker pull teddysun/shadowsocks-libev
 
 本脚本使用方法：
 ```
-https://github.com/magic233/shadowsocks_docker/blob/master/shadowsocks.sh
+wget https://github.com/magic233/shadowsocks_docker/blob/master/shadowsocks.sh
 chmod +x shadowsocks.sh
 ./shadowsocks.sh
 ```
