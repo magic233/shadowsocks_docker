@@ -11,6 +11,7 @@ https://github.com/magic233/shadowsocks_docker/blob/master/shadowsocks.sh
 chmod +x shadowsocks.sh
 ./shadowsocks.sh
 ```
+
 1. Install shadowsocks
 2. Start shadowsocks
 3. Stop shadowsocks
@@ -18,8 +19,17 @@ chmod +x shadowsocks.sh
 5. Stop&Remove shadowsocks images
 
 Install shadowsocks：必须在邮docker环境的基础下才可以安装
+
 Start shadowsocks: 必须用本脚本安装过shadowsocks的情况下关闭（容器未删除）才可用次选项启动
+
 Stop shadowsocks：停止shadowsocks
+
 View port&password：用脚本安装完成后会自动创建缓存文件，用此选项可读取配置信息
+
 Stop&Remove shadowsocks images：停止并删除容器以及镜像
+
+
+```
+./shadowsocks.sh   //可再次启用脚本
+```
 
