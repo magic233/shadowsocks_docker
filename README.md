@@ -6,7 +6,7 @@
 
 本脚本使用方法：
 ```
-wget https://raw.githubusercontent.com/magic233/shadowsocks_docker/master/shadowsocks_docker
+wget https://raw.githubusercontent.com/magic233/shadowsocks_docker/master/shadowsocks_docker.sh
 chmod +x shadowsocks_docker.sh
 ./shadowsocks_docker.sh
 ```
